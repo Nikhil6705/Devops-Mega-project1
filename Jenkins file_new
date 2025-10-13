@@ -19,7 +19,7 @@ stages{
             }
 
         }
-}
+
         stage("Build the application"){
             steps {
                sh "mvn clean package"
