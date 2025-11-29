@@ -9,8 +9,8 @@ pipeline{
     environment {
         APP_NAME = "devops-mega-project"
         RELEASE = "1.0.0"
-        DOCKER_USER = "mydevopsuser46"
-        DOCKER_PASS = 'dockerhub'
+        DOCKER_USER = "nikhil6705"
+        DOCKER_PASS = 'Nikhil@6705'
         IMAGE_NAME = "${DOCKER_USER}" + "/" + "${APP_NAME}"
         IMAGE_TAG = "${RELEASE}-${BUILD_NUMBER}"
         JENKINS_API_TOKEN = credentials("JENKINS_API_TOKEN")
@@ -26,7 +26,7 @@ pipeline{
         }
         stage("Checkout from SCM"){
             steps {
-                git branch: 'main', credentialsId: 'github', url: 'https://github.com/Devops1224789/Devops-Mega-project.git'
+                git branch: 'main', credentialsId: 'github', url: 'https://github.com/Nikhil6705/Devops-Mega-project1.git'
             }
 
         }
